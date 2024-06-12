@@ -28,12 +28,12 @@ evaluation:
       presence_penalty: 0.0
 demo:
   model:
-    name: GPT_forward
-    batch_size: 500
-    gpt_config:
-      model: text-davinci-002
-      temperature: 0.7
-      max_tokens: 200
-      top_p: 1.0
-      frequency_penalty: 0.0
-      presence_penalty: 0.0
+  name: LLAMA
+  batch_size: 500
+  modelID: meta-llama/Meta-Llama-3-8B-Instruct
+  llama_config:
+    temperature: 0.9
+    top_k: 50
+    top_p: 0.9
+    do_sample: True
+    max_length: 200
