@@ -14,22 +14,6 @@ from transformers import LlamaTokenizer, LlamaForCausalLM
 
 
 
-""" Using BAM """
-
-from dotenv import load_dotenv
-
-from genai.client import Client
-from genai.credentials import Credentials
-from genai.schema import (
-    TextGenerationParameters,
-    TextGenerationReturnOptions,
-)
-
-load_dotenv()
-client = Client(credentials=Credentials.from_env())
-
-
-
 
 def model_from_config(config, disable_tqdm=True):
     """Returns a model based on the config."""
